@@ -3,8 +3,8 @@ package expo.modules.notifications.service
 import android.content.Intent
 import android.os.Parcel
 import androidx.test.core.app.ApplicationProvider
+import expo.modules.notifications.notifications.categories.NotificationActionRecord
 import expo.modules.notifications.notifications.model.Notification
-import expo.modules.notifications.notifications.model.NotificationAction
 import expo.modules.notifications.notifications.model.NotificationContent
 import expo.modules.notifications.notifications.model.NotificationRequest
 import org.junit.Assert.*
@@ -30,8 +30,8 @@ class NotificationsServiceResponseIntentTest {
     )
   }
 
-  private fun buildAction(identifier: String = "default"): NotificationAction {
-    return NotificationAction(identifier, "Open", true)
+  private fun buildAction(identifier: String = "default"): NotificationActionRecord {
+    return NotificationActionRecord(identifier, "Open", null, NotificationActionRecord.Options(true))
   }
 
   /**
