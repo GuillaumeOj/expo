@@ -14,6 +14,8 @@
 
 ### 💡 Others
 
+- Updated `react-native-is-edge-to-edge` to `^1.2.1`. ([#XXXXX](https://github.com/expo/expo/pull/XXXXX) by [@zoontek](https://github.com/zoontek))
+
 ## 55.0.0-preview.8 — 2026-02-16
 
 ### 🎉 New features
